@@ -1,6 +1,19 @@
-/*------------Menú-------------*/
+/*---------MENU----------*/
+
 nav.navbar{
     background-color: #df6615 !important;
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    z-index: 1;
+    float: left;
+}
+
+.menu{
+    margin-right: 3%;
 }
 
 nav a{color: #ffffff;}
@@ -12,6 +25,11 @@ nav li.active a{
 
 nav li a:hover{color: #ffffff;}
 
+button.navbar-toggler{
+    margin-left: auto;
+}
+
+
 /*------------body general-------------*/
 
 /*.container{
@@ -19,3 +37,23 @@ nav li a:hover{color: #ffffff;}
     padding:0;
     max-width: 100%;
 }*/
+
+/*-------MEDIA QUIERIES------*/
+
+@media (max-width: 2000px){
+    /*----------SLIDER---------*/
+    .slider-1 > .carousel-caption{
+        margin-bottom: 27% !important;
+    }
+
+    .slider-1> img,
+    .slider-2> img,
+    .slider-3> img{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 990px){
+    nav{max-height: 600px;}
+    .navbar-brand {position: absolute;left: 10px;top: 4px;z-index: 1;float: left;}
+}
