@@ -1,0 +1,21 @@
+/*------------Menú-------------*/
+nav.navbar{
+    background-color: #df6615 !important;
+}
+
+nav a{color: #ffffff;}
+
+nav li.active a{
+    background-color: rgba(0,0,0,.2);
+    height: 100%;
+}
+
+nav li a:hover{color: #ffffff;}
+
+/*------------body general-------------*/
+
+/*.container{
+    margin: 0;
+    padding:0;
+    max-width: 100%;
+}*/
