@@ -29,6 +29,24 @@ button.navbar-toggler{
     margin-left: auto;
 }
 
+/*----------FORMULARIOS-----------*/
+.form-control{margin-bottom: 1%;}
+.formulario-1{max-width: 100%; flex: 0 0 100%; }
+.formularioUno{padding: 0% 30%;}
+button.bg-dark{background-color: #DF6515 !important;}
+button.bg-dark:hover{background-color: #027DB3 !important;}
+.btn-primary{font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;}
+
+/*----------BARRAS DE PROGRESION----------*/
+.bg-orange{background-color: #DF6515;}
+
+/*----------BOTOTNES DE CONTACTO-----------*/
+.btn-orange-form{background-color: #DF6515; color: #ffffff; font-weight: 600;}
+.contact-button{color: #ffffff;}
+
+/*----------SECCION OBJETIVO---------------*/
+#Objetivo{padding: 0% 7%;background-image: url("http://localhost/ESC-Landing/ESC-Landing/img/about-bg.jpg"); color: #ffffff;}
+.parallax{background-size: cover;background-repeat: no-repeat;background-position: center;background-attachment: fixed;}
 
 /*------------body general-------------*/
 
@@ -45,6 +63,12 @@ button.navbar-toggler{
     .slider-1 > .carousel-caption{
         margin-bottom: 27% !important;
     }
+    .slider-2 > .carousel-caption{
+        margin-bottom: 27% !important;
+    }
+    .slider-3 > .carousel-caption{
+        margin-bottom: 27% !important;
+    }
 
     .slider-1> img,
     .slider-2> img,
@@ -56,4 +80,28 @@ button.navbar-toggler{
 @media (max-width: 990px){
     nav{max-height: 600px;}
     .navbar-brand {position: absolute;left: 10px;top: 4px;z-index: 1;float: left;}
+}
+
+@media (max-width: 576px){
+    .h2-mobile{font-size: 1.563rem;text-align: center;font-weight: 600;margin-bottom: 10%;}
+    .frst-contact-btn{padding: 5% 30%;}
+    
+        /*----------SLIDER---------*/
+        .formulario-1{display: none;}
+        h1{font-size: 1.875rem;;}
+        h2{font-size: 25px;}
+        .slider-1 > .carousel-caption{
+            margin-bottom: 0% !important;
+        }
+        .slider-2 > .carousel-caption{
+            margin-bottom: 0% !important;
+        }
+        .slider-3 > .carousel-caption{
+            margin-bottom: 0% !important;
+        }
+
+        /*----------MENU---------*/
+        .navbar-nav{text-align: right;}
+
+
 }
