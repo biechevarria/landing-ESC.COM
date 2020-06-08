@@ -42,10 +42,11 @@ button.bg-dark:hover{background-color: #027DB3 !important;}
 
 /*----------BOTOTNES DE CONTACTO-----------*/
 .btn-orange-form{background-color: #DF6515; color: #ffffff; font-weight: 600;}
-.contact-button{color: #ffffff;}
+.contact-button{color: #ffffff !important;}
+.callbtn{background-color: #00bb2d; color: #ffffff; font-weight: 600;}
 
 /*----------SECCION OBJETIVO---------------*/
-#Objetivo{padding: 0% 7%;background-image: url("http://localhost/ESC-Landing/ESC-Landing/img/about-bg.jpg"); color: #ffffff;}
+#Objetivo{padding: 2% 7%;background-image: url("http://localhost/ESC-Landing/ESC-Landing/img/about-bg.jpg"); color: #ffffff;}
 .parallax{background-size: cover;background-repeat: no-repeat;background-position: center;background-attachment: fixed;}
 
 /*------------body general-------------*/
@@ -75,11 +76,37 @@ button.bg-dark:hover{background-color: #027DB3 !important;}
     .slider-3> img{
         width: 100% !important;
     }
+
+    /*---------SLIDER DIVERSION------------*/
+    #Diversion{background-image: url(../ESC-Landing/img/twitter-bg.jpg);}
+    #AnchoTxtDiver{margin: 0 auto; text-align: center; color: #ffffff;}
+    section#Diversion{padding: 2% 7%;}
+
+    /*-----------------BLOG----------------*/
+    h2.title-posts{font-size: 24px;}
+    h3.resume-posts{font-size: 18px;}
+    .post{width: 33.33333333%;}
+    .cont-blog{max-width: 1500px;}
+    .r-blog{margin: 0% 10%;padding: 2% 0%;}
+
+    /*----------------FOOTER--------------*/
+    footer{background-color: #DF6515;}
+    footer a{color: #ffffff; font-weight: 600;}
+}
+
+@media (max-width: 1350px){
+        /*----------SECCION OBJETIVO---------*/
+    .col-md-4{flex: 0 0 100%; max-width: 100%;}
+    section#Objetivo{padding: 2% 15%;}
 }
 
 @media (max-width: 990px){
     nav{max-height: 600px;}
     .navbar-brand {position: absolute;left: 10px;top: 4px;z-index: 1;float: left;}
+    #AnchoTxtDiver{margin: 0 11%;}
+
+    /*----------SECCION OBJETIVO---------*/
+    .col-md-4{flex: 0 0 100%; max-width: 100%;}
 }
 
 @media (max-width: 576px){
@@ -92,16 +119,33 @@ button.bg-dark:hover{background-color: #027DB3 !important;}
         h2{font-size: 25px;}
         .slider-1 > .carousel-caption{
             margin-bottom: 0% !important;
+            background-color: #3131315e;
         }
         .slider-2 > .carousel-caption{
             margin-bottom: 0% !important;
         }
         .slider-3 > .carousel-caption{
             margin-bottom: 0% !important;
+            background-color: #3131315e;
         }
 
         /*----------MENU---------*/
         .navbar-nav{text-align: right;}
+
+        /*----------BLOG---------*/
+        .post{width: 100%;margin-bottom: 10%;}
+        .r-blog {margin: 0% 5%;padding: 6% 0%;}
+        .r-blog > h2{text-align: center; font-size: 30px; font-weight: 600;}
+        .r-blog > h3{text-align: center; font-size: 1.5rem;}
+
+        /*------------CONTACTO-----------*/
+        div.frst-contact-btn{padding: 10% 5%;}
+
+        /*------------BARRAS DINAMICAS---------*/
+        div#statbars{padding-top: 10%}
+
+        /*------------OBJETIVO---------------*/
+        #Objetivo{padding: 5% 7% 0% 7%;}
 
 
 }
