@@ -23,6 +23,8 @@ nav.navbar{
     float: left;
 }
 
+.navbar-nav > .menu-item:hover{background-color: rgba(0,0,0,.2);}
+
 .menu{
     margin-right: 3%;
 }
@@ -39,6 +41,23 @@ nav li a:hover{color: #ffffff;}
 button.navbar-toggler{
     margin-left: auto;
 }
+
+.menu-menu-principal-container{width: 100%; padding-left: 75%;}
+
+li{margin: 0% 2%; padding: 2% 2%;}
+
+
+/*-------*SUBMENUS*--------------*/
+.menu-item-has-children{position: relative;}
+.menu-item-has-children .sub-menu{position: absolute; z-index: 10; padding: 0; min-width: 120px; text-align: left;
+box-shadow: 0 3px 3px rgba(0,0,0,.5); background-color: #df6615 ; left: -8px; display: none; list-style: none;}
+.menu-item-has-children .sub-menu li{padding: 2% 4%;}
+.menu-item-has-children:hover .sub-menu{display: block;}
+.menu-item-has-children > a::after{content: '';width: 0; height: 0; border-style: solid; border-width: 5px 5px 0 5px;
+border-color: #ffffff transparent transparent transparent; position: relative; top: 13px; margin-left: 10%;}
+.menu-item-has-children .sub-menu li:hover{background-color: rgba(0,0,0,0.2);}
+
+
 
 /*----------FORMULARIOS-----------*/
 .form-control{margin-bottom: 1%;}

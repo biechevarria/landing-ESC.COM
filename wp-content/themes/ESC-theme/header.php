@@ -29,8 +29,16 @@
     <header>
       <!--Navbar-->
   
-        <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-
+        <nav class="navbar navbar-expand-lg navbar-dark primary-color ml-auto">
+            <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'top',
+                    'navbvar' => 'nav',
+                    'navbar_class' => 'navbar',
+                    'menu_class' => 'navbar-nav'
+                ));
+            ?>
+<!-------------------MENU ORIGINAL HECHO A CODIGO-------------------->
           <!-- Navbar brand -->
           <a class="navbar-brand" href="/index.html">
             <img src="<?php bloginfo('template_url'); ?> /img/logo-v2.png" alt="logo ESC-Landing">
@@ -42,31 +50,11 @@
               <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Collapsible content -->
-          <div class="collapse navbar-collapse" id="basicExampleNav">
-
-              <!-- Links -->
-              <ul class="navbar-nav ml-auto menu">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="#">Home
-                          <span class="sr-only">(current)</span>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                  </li>
-
-              </ul>
-              <!-- Links -->
-          </div>
-          <!-- Collapsible content -->
-
         </nav>
  
 <!--/.Navbar-->
+
+<!--------------------FIN DE MENU HECHO A CODIGO--------------------->
 
     </header>
 
